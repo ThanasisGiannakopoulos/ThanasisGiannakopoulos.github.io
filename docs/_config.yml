@@ -29,7 +29,7 @@ github_username:  ThanasisGiannakopoulos
 linkedin_username:  thanasis-giannakopoulos
 
 # Build settings
-theme: jekyll-minima
+theme: minima
 plugins:
   - jekyll-feed
 
