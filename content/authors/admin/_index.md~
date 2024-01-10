@@ -74,9 +74,9 @@ social:
   # Link to a PDF of your resume/CV.
   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
   # and uncomment the lines below.
-  #- icon: cv
-  #  icon_pack: ai
-  #  link: uploads/resume.pdf
+  - icon: cv
+    icon_pack: ai
+    link: uploads/resume.pdf
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
@@ -93,8 +93,7 @@ software development, and data analysis. Recently, I have been
 spending most of my time exploring numerical methods suitable for
 theories beyond general relativity and developing a code for
 gravitational collapse.  In the past, my work was focused on the
-[characteristic problem of general
-relativity](../../../project/characteristic_gr), specifically its
+characteristic problem of general relativity, specifically its
 mathematical properties of hyperbolicity and well-posedness, as well
 as some of its applications.
 

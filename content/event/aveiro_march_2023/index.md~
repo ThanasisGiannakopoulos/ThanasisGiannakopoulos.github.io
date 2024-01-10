@@ -1,0 +1,60 @@
+---
+title: Numerical convergence of model Cauchy-Characteristic Extraction and Matching
+
+event: Gravitational Geometry and Dynamics Group Seminar - Gr@v Seminar
+event_url: http://gravitation.web.ua.pt/index.php/node/4299
+
+location: online
+#address:
+#  street: 
+#  city: Aveiro 
+#  region: 
+#  postcode: ''
+#  country: Portugal
+
+abstract: The detection of gravitational waves is a powerful tool in our quest to deepen our understanding of fundamental physics. To make the most out of this tool, we need to accurately simulate the whole process of gravitational wave emission, propagation and detection by interferometers. The methods of Cauchy-Characteristic Extraction (CCE), and Matching (CCM) have the potential to provide highly accurate gravitational waveform models. In reaching this potential there is a subtle obstacle that has been overlooked. This obstacle is the weakly hyperbolic structure of the PDE system solved in the Characteristic setup of the Einstein Field Equations (EFE), which results from the common choice of Bondi-like coordinates. Motivated by this, I will discuss toy models that capture that PDE structure and study CCE and CCM with them. More specifically, I will present norm convergence tests that demonstrate the effect of weak hyperbolicity in model CCE and CCM and discuss how these results relate to CCE and CCM for the EFE.
+
+# Talk start and end times.
+#   End time can optionally be hidden by prefixing the line with `#`.
+date: '2022-03-22T11:00:00Z'
+date_end: '2022-03-22T12:00:00Z'
+all_day: false
+
+# Schedule page publish date (NOT talk date).
+publishDate: '2024-01-01T00:00:00Z'
+
+authors: []
+tags: []
+
+# Is this a featured talk? (true/false)
+featured: false
+
+image:
+  caption: ''
+  focal_point: Right
+
+links:
+  #- icon: twitter
+  #  icon_pack: fab
+  #  name: Follow
+  #  url: 
+url_code: ''
+url_pdf: ''
+url_slides: 'aveiro_seminar_march_2023.pdf'
+url_video: ''
+
+# Markdown Slides (optional).
+#   Associate this talk with Markdown slides.
+#   Simply enter your slide deck's filename without extension.
+#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
+#   Otherwise, set `slides = ""`.
+#slides:
+
+# Projects (optional).
+#   Associate this post with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
+#   Otherwise, set `projects = []`.
+projects:
+  - characteristic_gr
+---

@@ -1,0 +1,65 @@
+﻿
+
+\begin{tikzpicture}
+
+% Arcs
+%\draw[color=black!60!white] (-1,4,1.4) arc (180:0:1.4cm and 0.25cm);
+\draw[dashed, color=black!60!white] (-1.4,1.4) arc (180:0:1.4cm and 0.2cm);
+\draw[color=black!60!white] (-1.4,1.4) arc (180:360:1.4cm and 0.2cm);
+
+%\draw[color=black!30!white] (0,2) arc (90:270:0.5cm and 2cm);
+%\draw[dashed, color=black!30!white] (0,2) arc (90:-90:0.5cm and 2cm);
+%\draw[color=black!30!white] (0,0) circle (1cm);
+
+%Ball
+\shade[ball color=yellow!50!white,opacity=0.40] (0,0) circle (2cm);
+
+%Radius
+%\draw[thick, dashed, color=black!60!white] (0,0) -- (2,0);
+\draw[black!60!white] (0,0) node[anchor =north] {$\rho = \rho_c$}; 
+
+%vectors
+%\draw[ dashed, black!60!white,->] (1.4,1.4) -- (2.4,2.4);
+%\draw[ dashed, black!60!white,-] (2.4,2.4) -- (2.8,2.8);
+%\draw[thick, black!60!white] (2.5,3) node[anchor = west ] {out};
+\draw [dashed, black!60!white] plot [smooth, tension=1] coordinates { (0.9,0.1) (1.4,1.4) (2.2,2.6) };
+\draw[thick, black!60!white] (1.8,2.9) node[anchor = west ] {out};
+\draw [-stealth, black!60!white](1.9,2.2) -- (1.915,2.22);
+
+%\draw[ dashed, black!60!white,->] (-2.8,2.8) -- (-2.4,2.4);
+%\draw[ dashed, black!60!white,-] (-2.4,2.4) -- (-1.4,1.4);
+%\draw[thick, black!60!white] (-2.6,3) node[anchor = east ] {in};
+
+\draw [dashed, black!60!white] plot [smooth, tension=1] coordinates { (-0.9,0.1) (-1.4,1.4) (-2.2,2.6) };
+\draw[thick, black!60!white] (-1.9,2.9) node[anchor = east ] {in};
+\draw [stealth-, black!60!white](-1.9,2.2) -- (-1.915,2.22);
+
+%c_plus
+\draw[thick, cyan!60!black,->] (1.4,1.4) -- (1.8,1.8);
+\draw[thick, cyan!60!black] (2,2) node[anchor = north ] {$c_+^\rho$};
+
+\draw[thick, cyan!60!black,->] (1.4,1.4) -- (1.,1.8);
+\draw[thick, cyan!60!black] (0.8,2.) node[anchor = west ] {$c_+^\theta$};
+
+\draw[thick, cyan!60!black]  (1.4,1.4) {circle [radius=0.07]};
+\draw[thick, cyan!60!black] (1.5,1.45) node[anchor = north ] {$c_+^\phi$};
+
+%c_minus
+\draw[thick, cyan!60!black,->] (-1.4,1.4) -- (-1.,1.);
+\draw[thick, cyan!60!black] (-0.75,1.25) node[anchor = north ] {$c_-^\rho$};
+
+\draw[thick, cyan!60!black,->] (-1.4,1.4) -- (-1.8,1);
+\draw[thick, cyan!60!black] (-1.7,1.) node[anchor = east ] {$c_-^\theta$};
+
+\draw[thick, cyan!60!black]  (-1.4,1.4) {circle [radius=0.07]};
+\draw[thick, cyan!60!black,-] (-1.4,1.4) -- (-1.45,1.45);
+\draw[thick, cyan!60!black,-] (-1.4,1.4) -- (-1.35,1.45);
+\draw[thick, cyan!60!black] (-1.25,1.33) node[anchor = south ] {$c_-^\phi$};
+
+%\draw[thick, cyan!60!black]  (1.8,2.75) {circle [radius=0.07]};
+%\draw[thick, blue]  (-1,2) pic[rotate = 10] {cross=3pt};
+%\draw[thick, cyan!60!black] (1.8,2.75) node[anchor = north ] {\tiny$\partial_z$};
+
+%\draw (.5,0) node[cross,rotate=10];
+
+\end{tikzpicture}
