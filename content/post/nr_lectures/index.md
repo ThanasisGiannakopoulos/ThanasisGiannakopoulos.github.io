@@ -22,5 +22,5 @@ not to train people as numerical relativists.
 
 In lecture 4 there was more material presented, related to numerical
 experiments with toy models. It can be found
-[here](./numerics). Please let me know if you find any errors and/or
-have questions.
+[here](https://github.com/ThanasisGiannakopoulos/NR_lecture_supplement?tab=readme-ov-file). Please
+let me know if you find any errors and/or have questions.
