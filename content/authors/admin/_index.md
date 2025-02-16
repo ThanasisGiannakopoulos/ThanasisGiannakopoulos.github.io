@@ -33,6 +33,7 @@ interests:
   - Numerical simulations
   - Gravitational waves
   - Black holes
+  - Machine learning
 
 # Education to show in About widget
 education:
@@ -91,15 +92,16 @@ My main research is numerical simulations of gravitational systems. It
 combines theoretical knowledge of gravitation with numerical analysis,
 software development, and data analysis. Recently, I have been
 spending most of my time exploring numerical methods suitable for
-theories beyond general relativity and developing a code for
-gravitational collapse.  In the past, my work was focused on the
-[characteristic problem of general
-relativity](../../../project/characteristic_gr), specifically its
-mathematical properties of hyperbolicity and well-posedness, as well
-as some of its applications.
+theories beyond general relativity and developing [SpheriCo.jl][5] a
+code for gravitational collapse in classical and semiclassical
+gravity. In the past, my work was focused on the [characteristic
+problem of general relativity](../../../project/characteristic_gr),
+specifically its mathematical properties of hyperbolicity and
+well-posedness, as well as some of its applications.
 
 [1]: https://www.nottingham.ac.uk/physics/
 [2]: https://www.nottingham.ac.uk/mathematics/index.aspx
 [3]: https://www.nottingham.ac.uk/physics/research/particle-cosmology/index.aspx
 [4]: https://www.nottingham.ac.uk/gravity/
+[5]: https://github.com/ThanasisGiannakopoulos/SpheriCo.jl
 {style="text-align: justify;"}
