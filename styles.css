@@ -1,0 +1,298 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header, footer {
+    text-align: center;
+    padding: 1em;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row; /* Stack elements horizontally */
+    justify-content: center; /* Center elements horizontally */
+    align-items: center; /* Center elements vertically */
+    gap: 1em; /* Adjust gap as needed */
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0; /* Remove margins */
+}
+
+h1 {
+    margin: 0; /* Remove default margin */
+}
+
+.menu {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center; /* Center elements horizontally */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Ensure the menu takes up the full width */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 2em;
+    margin: 0; /* Remove default margin */
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s; /* Add transition for smooth effect */
+}
+
+.menu a:hover {
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center elements vertically */
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.social-links a {
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.social-links a:hover {
+    transform: scale(1.1); /* Scale up the icon on hover */
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+.github-logo {
+    content: url('images/github-mark.png');
+}
+
+.dark-theme .github-logo {
+    content: url('images/github-mark-white.png');
+}
+
+.linkedin-logo {
+    content: url('images/linkedin-logo.png');
+}
+
+.dark-theme .linkedin-logo {
+    content: url('images/linkedin-logo-white.png');
+}
+
+.google-scholar-logo {
+    content: url('images/google-scholar-mark.png');
+}
+
+.dark-theme .google-scholar-logo {
+    content: url('images/google-scholar-mark-white.png');
+}
+
+.email-icon {
+    content: url('images/email_icon_black.png');
+}
+
+.dark-theme .email-icon {
+    content: url('images/email_icon_white.png');
+}
+
+#content, #projects {
+    text-align: center;
+    margin: 2em;
+    flex: 1; /* Allow content to grow and push footer to the bottom */
+}
+
+#content {
+    text-align: left; /* Center the text horizontally */
+    margin: 2em auto; /* Add vertical and horizontal margins */
+    max-width: 850px; /* Limit the width of the content for better readability */
+    font-size: 1.2em; /* Increase the font size */
+    flex: 1; /* Allow content to grow and push footer to the bottom */
+    line-height: 1.6; /* Improve line spacing for readability */
+}
+/* Footer styles */
+footer {
+    width: 100%;
+    padding: 1em 0;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+.light-theme footer {
+    background-color: #f6f8fa;
+    color: #24292e;
+}
+
+.dark-theme footer {
+    background-color: #24292e;
+    color: #f6f8fa;
+}
+
+button {
+    padding: 0.5em 1em;
+    margin: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.light-theme {
+    background-color: #f6f8fa;
+    color: #24292e;
+}
+
+.light-theme button {
+    background-color: #0366d6;
+    color: white;
+}
+
+.light-theme button:hover {
+    background-color: #005cc5;
+}
+
+.dark-theme {
+    background-color: #24292e;
+    color: #f6f8fa;
+}
+
+.dark-theme button {
+    background-color: #0366d6;
+    /* color: white; */
+}
+
+.dark-theme button:hover {
+    background-color: #005cc5;
+}
+
+.theme-toggle-btn {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    z-index: 1000; /* Ensure the button is above other elements */
+}
+
+/* Default hyperlink style */
+a {
+    color: #0366d6; /* Default link color (blue) */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+/* 
+/* Hover effect for hyperlinks */
+a:hover {
+    color: #005cc5; /* Darker blue on hover */
+    text-decoration: underline; /* Add underline on hover */
+} */
+/* 
+/* Visited links */
+a:visited {
+    color: #6a5acd; /* Purple color for visited links */
+}
+
+/* Active links */
+a:active {
+    color: #ff4500; /* Orange color for active links */
+} */
+
+/* Allow the main content to grow and push the footer to the bottom */
+#content, #projects {
+    flex: 1; /* Allow content to grow and push footer down */
+    text-align: center;
+    margin: 2em auto;
+}
+
+/* Project list styles */
+.project-list {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 2.5em; /* Add spacing between projects */
+    margin-top: 3em;
+}
+.project-item {
+    width: 80%; /* Set a width for the project items */
+    max-width: 600px; /* Limit the maximum width */
+    text-align: left;
+    border: 2px solid #0366d6;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 1em; /* Add padding inside the box */
+}
+
+.project-item:hover {
+    transform: scale(1.025);
+}
+
+/* Remove underline for project links */
+.project-item a {
+    text-decoration: none; /* Remove underline for links */
+    color: inherit; /* Inherit the color from parent styles */
+}
+
+/* Ensure no underline on hover */
+.project-item a:hover {
+    text-decoration: none; /* Prevent underline on hover */
+}
+
+.project-thumbnail {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-item h3 {
+    margin: 0.5em 0;
+    font-size: 1.4em;
+    color: #0366d6;
+}
+
+/* Short description styles */
+.project-item p {
+    margin: 0 1em 1em;
+    font-size: 1.1em;
+    font-weight: 500; /* Make the text thicker */
+    transition: color 0.3s ease; /* Smooth transition for theme change */
+}
+
+/* Light theme */
+.light-theme .project-item p {
+    color: #24292e; /* Dark text for light theme */
+}
+
+/* Dark theme */
+.dark-theme .project-item p {
+    color: #f6f8fa; /* Light text for dark theme */
+}
+
+/* Active page style */
+.menu a.active {
+    color: #0366d6; /* Same highlight color as hover */
+    border-radius: 5px;
+    padding: 0.5em;
+}
+
+/* Highlighted word under the active menu item */
+.menu li .highlight {
+    display: block; /* Make the span appear on a new line */
+    font-size: 0.9em; /* Slightly smaller font size */
+    color: #0366d6; /* Highlight color */
+    text-align: center; /* Center the text under the menu item */
+    margin-top: 0.2em; /* Add some spacing above the word */
+    font-weight: bold; /* Make the text bold */
+}

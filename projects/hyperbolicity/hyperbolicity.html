@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hyperbolicity of Characteristic Formulations</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="light-theme"> <!-- Default theme -->
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="../../index.html">About me</a></li>
+                <li>
+                    <a href="../index.html" class="active">Projects</a>
+                    <span class="highlight">Hyperbolicity</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="content">
+        <h1>The Hyperbolicity of characteristic formulations</h1>
+        <p><strong>Summary:</strong> Investigating the hyperbolicity of the characteristic setup in general relativity and its impact in applications.</p>
+
+        <p><strong>Tags:</strong> Hyperbolicity, Well-posedness</p>
+        <p><strong>Date:</strong> January 3, 2024</p>
+
+        <img src="featured.png" alt="Cauchy and characteristic setups" width="450" height="auto">
+        <figcaption>Cauchy and characteristic setups in general relativity </figcaption>
+        
+        <h2>Introduction</h2>
+        <p>When we numerically simulate the dynamics of gravitational systems, we often imagine foliating the spacetime with hypersurfaces of constant time. A common foliation choice is spacelike hypersurfaces, which can form a Cauchy setup used, for instance, to study the region near the merger of two black holes. Another foliation choice is null hypersurfaces, which form the characteristic setup of general relativity. Since light and gravitational waves travel on null hypersurfaces, the characteristic setup is particularly useful in radiation problems.</p>
+
+        <p>The characteristic setup of general relativity is typically constructed using Bondi-like coordinates. Let us, for concreteness, focus on a physical situation where gravitational waves travel away from their source and towards future null infinity. In this case, the various Bondi-like coordinates follow outgoing null geodesics. Different Bondi-like coordinates parametrize null geodesics differently, for instance, using an affine parameter (affine-null coordinates) or using the areal radius of concentric two spheres (the Bondi-Sachs proper coordinates). In all such coordinate systems, however, the different outgoing null geodesics can be labeled by the transverse coordinates, for instance, the angles (θ, φ) on a two-sphere.</p>
+
+        <img src="two_spheres_null_geod.png" alt="Two spheres with null geodesics" width="450" height="auto">
+        <figcaption>Two spheres with null geodesics</figcaption>
+
+        <h2>Main results</h2>
+        <p>In this project, together with Nigel Bishop, David Hilditch, Denis Pollney, and Miguel Zilhão, we investigated the hyperbolicity of these characteristic formulations of general relativity and its implications in applications.
+    
+        More specifically, in <a href="https://inspirehep.net/literature/1806618" target="_blank">Hyperbolicity of General Relativity in Bondi-like gauges</a>, we found that some commonly used Bondi-like characteristic setups are only weakly hyperbolic.
+    
+        After this, in <a href="https://inspirehep.net/literature/1979053" target="_blank">Gauge Structure of the Einstein Field Equations in Bondi-like Coordinates</a>, we found that weak hyperbolicity of these setups is caused by the gauge fixing, which geometrically can be viewed as the fact that distinct null geodesics are labeled by, e.g. angles on the two-sphere. We argued that all Bondi-like characteristic systems with up to second-order metric derivatives are weakly hyperbolic due to this gauge structure.
+    
+        Finally, in <a href="https://inspirehep.net/literature/2670861" target="_blank">Numerical Convergence of Model Cauchy-Characteristic Extraction and Matching</a>, we discuss the implications of this result in gravitational waveform modeling applications, specifically the Cauchy-characteristic extraction and matching methods. In brief, the matching method is ill-posed in any norm, whereas the extraction method could be weakly well-posed in a certain norm, provided that the characteristic initial boundary value problem of the weakly hyperbolic Bondi-like systems is weakly well-posed. It is not known, however, if the latter is true. All these findings are collected in my <a href="https://inspirehep.net/literature/2692021" target="_blank">PhD Thesis</a>, together with some additional results and applications to numerical holography. </p>
+    
+        <h2>Future Work</h2>
+        <p>In the future, a possible goal of this project is to propose different characteristic formulations that are strongly or symmetric hyperbolic. The focus is on metric formulations with up to second-order derivatives. There are different formulations that involve up to third-order metric derivatives that promote the curvature as an independent variable, which are symmetric hyperbolic in Bondi-like gauges.
+    
+        Another possible goal is to investigate further the relation of the second- and third-order formulations, as well as the possible weak well-posedness of the characteristic initial (boundary) value problem of the second-order Bondi-like systems.</p>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/ThanasisGiannakopoulos"><img src="../../images/github-mark.png" alt="GitHub" class="github-logo"></a>
+            <a href="https://linkedin.com/in/thanasis-giannakopoulos"><img src="../../images/linkedin.png" alt="LinkedIn" class="linkedin-logo"></a>
+            <a href="https://scholar.google.com/citations?user=Kjg529MAAAAJ&hl=en"><img src="../../images/google-scholar-mark.png" alt="Google Scholar" class="google-scholar-logo"></a>
+            <a href="mailto:giannakopoulos.th@gmail.com"><img src="../../images/email_icon.png" alt="Email" class="email-icon"></a>
+        </div>
+        <p>Created by Thanasis Giannakopoulos</p>
+    </footer>
+
+    <button id="themeToggleBtn" class="theme-toggle-btn">Light</button>
+
+    <script src="../../script.js"></script>
+</body>
+</html>

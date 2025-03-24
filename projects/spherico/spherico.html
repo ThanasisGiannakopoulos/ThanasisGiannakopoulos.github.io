@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spherico.jl</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="light-theme"> <!-- Default theme -->
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="../../index.html">About me</a></li>
+                <li>
+                    <a href="../index.html" class="active">Projects</a>
+                    <span class="highlight">SpheriCo.jl</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="content">
+        <h1>SpheriCo.jl</h1>
+        <p><strong>Summary:</strong> A Julia package for the Spherical Collapse of a scalar field in classical and semiclassical gravity</p>
+
+        <p><strong>Tags:</strong> Black holes, Hawking pairs</p>
+        <p><strong>Date:</strong> March 24, 2025</p>
+
+        <h2>Introduction</h2>
+        <p>
+            The collapse of a scalar field with spherical symmetry in classical gravity (general relativity) has reached a good level of maturity and has unraveled the exciting phenomenon of critical collapse, that is the threshold between black hole formation and dispersion of the initial data. We call the former scenario supercritical and an apparent horizon (AH) forms and the latter subcritical (no AH).
+            
+            Near criticality we observe unique features such as self similarity of the solution and an echoing behaviour of the collapsing scalar field. 
+        </p>
+        <p>
+            
+            Understanding the same system when the classical scalar is promoted to a quantum field (semiclassical setup) is yet to be fully understood. In this semiclassical system we retain a classical geometry, but its dynamics are sourced by the expectation value of the quantum stress-energy tensor. To approximate this tensor we need to evolve as many quantum modes as possible, which is computationally expensive. Restricting to spherical symmetry makes the problem more managable, but one still needs to evolve a large number of modes to capture the quantum effects and also resolve coordinate singularities near the origin of the radial domain.
+        
+            Overcoming these challenges however can have a great payoff, since we can examine behavior that is not present in the classical system, such as
+            looking for Hawking radiation and correlations in the scalar field between points that
+            are separated across the horizon, which are interpreted as correlations between
+            pairs of Hawking quanta. <a href="https://github.com/ThanasisGiannakopoulos/SpheriCo.jl" target="_blank">SpheriCo.jl</a> has improved our previous abilities to perform such simulations, and has already been used to study quantum correlators across the black hole apparent horizon.
+        </p>
+        <img src="hawking_pair.png" alt="Hawking quanta inside and outside the black hole apparent horizon" width="400" height="auto">
+        <figcaption>Hawking quanta (red dots) inside and outside the black hole apparent horizon (AH)</figcaption>
+        
+
+        <h2>Main results</h2>
+        <p>
+            A challenge present in many studies of gravitational collapse is the approximation of the evolved variables near r = 0, since terms of the form 1/r appear in their equations of motion. This
+            challenge becomes increasingly difficult in the semiclassical setup, where these terms can
+            become very large and render the equations stiff. This seems to have been the main reason
+            for driving earlier semiclassical simulations on the topic only stable for a short time. By
+            combining the summation-by-parts operators of <a href="https://inspirehep.net/literature/872426" target="_blank"> Gundalch, Martin-Garcia, and Garfinkle</a> with the convenient evolved variables
+            of <a href="https://inspirehep.net/literature/643499" target="_blank"> Alcubierre and Gonzalez</a>, together with Banjamin Berczi, Magdalena Eriksson, and Paul Saffin, we manage to perform semiclassical simulations for longer than it was previously
+            possible, and explore quantum correlations of events across an apparent horizon.
+        </p>
+        <p>
+            In <a href="https://inspirehep.net/literature/2863390" target="_blank">Quantum correlations in a gravitational collapse simulation with SpheriCo.jl</a> we present an extensive suit of tests for the code that assess its accuracy and stability, both for the classical and quantum fields. We are able
+            to observe critical behavior of gravitational collapse for the classical setup, in agreement
+            with expected results. This is a non-trivial result, especially given that to our knowledge the specific summation-by-parts operators have not been used again in this case, and are originally constructed for a different setup. We also compute the two-point correlation functions,
+            with results that hint at a non-trivial correlation across the horizon of Hawking quanta. Videos with the evolution of the quantum correlators are available <a href="
+            https://www.youtube.com/playlist?list=PLyJ_PP8qOGF8pj5YvAKoQHOc9wp6fSUNk" target="_blank">here</a>.
+         </p>
+
+        <img src="correlators.png" alt="Quantum correlators across the black hole apparent horizon" width="800" height="auto">
+        <figcaption>Quantum correlators for a subcritical (no AH) and supercritical (AH exists) simulations</figcaption>
+    
+        <h2>Future Work</h2>
+        <p>There are various different avenues one can take to further develop this project and improve SpheriCo.jl. For instance, a possible direction is to work on the mathematical formulation of the equations solved, such that the constraint violation is improved and a dynamical shift is included in the metric ansatz. The latter can allow us to have stable near-critical simulations for the semiclassical setup, and more economic simulations for the classical one, since we could then increase the resolution near the origin without numerical regridding. Another idea is to add the possibility of finite difference summation-by-parts operators of higher order, which could then improve the accuracy of the simulations, making it especially important for the approximation of the quantum fields and their backreaction on the classical geometry. Experimenting with different lapse conditions can also be benificial in understanding the shape of the quantum correlators across the apparent horizon in different foliations.</p>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/ThanasisGiannakopoulos"><img src="../../images/github-mark.png" alt="GitHub" class="github-logo"></a>
+            <a href="https://linkedin.com/in/thanasis-giannakopoulos"><img src="../../images/linkedin.png" alt="LinkedIn" class="linkedin-logo"></a>
+            <a href="https://scholar.google.com/citations?user=Kjg529MAAAAJ&hl=en"><img src="../../images/google-scholar-mark.png" alt="Google Scholar" class="google-scholar-logo"></a>
+            <a href="mailto:giannakopoulos.th@gmail.com"><img src="../../images/email_icon.png" alt="Email" class="email-icon"></a>
+        </div>
+        <p>Created by Thanasis Giannakopoulos</p>
+    </footer>
+
+    <button id="themeToggleBtn" class="theme-toggle-btn">Light</button>
+
+    <script src="../../script.js"></script>
+</body>
+</html>
