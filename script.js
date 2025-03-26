@@ -18,3 +18,20 @@ themeToggleBtn.addEventListener('click', () => {
 // Apply the saved theme on page load
 const savedTheme = localStorage.getItem('theme') || 'dark-theme'; // Default to dark theme
 applyTheme(savedTheme);
+
+// Footer loading logic
+document.addEventListener("DOMContentLoaded", function () {
+    // Path to footer.html (always in the same directory)
+    const footerPath = "footer.html";
+
+    // Fetch and insert the footer
+    fetch(footerPath)
+        .then(response => response.text())
+        .then(data => {
+            const footerPlaceholder = document.getElementById("footer-placeholder");
+            if (footerPlaceholder) {
+                footerPlaceholder.innerHTML = data;
+            }
+        })
+        .catch(error => console.error("Error loading footer:", error));
+});

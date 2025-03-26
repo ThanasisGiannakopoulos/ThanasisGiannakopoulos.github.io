@@ -12,10 +12,10 @@
             <ul>
                 <li><a href="../../index.html">About me</a></li>
                 <li>
-                    <a href="../index.html" class="active">Projects</a>
+                    <a href="projects.html" class="active">Projects</a>
                     <span class="highlight">SpheriCo.jl</span>
                 </li>
-                <li><a href="../../talks/index.html">Talks</a></li>
+                <li><a href="talks.html">Talks</a></li>
             </ul>
         </nav>
     </header>
@@ -42,7 +42,7 @@
             are separated across the horizon, which are interpreted as correlations between
             pairs of Hawking quanta. <a href="https://github.com/ThanasisGiannakopoulos/SpheriCo.jl" target="_blank">SpheriCo.jl</a> has improved our previous abilities to perform such simulations, and has already been used to study quantum correlators across the black hole apparent horizon.
         </p>
-        <img src="hawking_pair.png" alt="Hawking quanta inside and outside the black hole apparent horizon" width="400" height="auto">
+        <img src="assets/projects/spherico/hawking_pair.png" alt="Hawking quanta inside and outside the black hole apparent horizon" width="400" height="auto">
         <figcaption>Hawking quanta (red dots) inside and outside the black hole apparent horizon (AH)</figcaption>
         
 
@@ -64,25 +64,18 @@
             https://www.youtube.com/playlist?list=PLyJ_PP8qOGF8pj5YvAKoQHOc9wp6fSUNk" target="_blank">here</a>.
          </p>
 
-        <img src="correlators.png" alt="Quantum correlators across the black hole apparent horizon" width="800" height="auto">
+        <img src="assets/projects/spherico/correlators.png" alt="Quantum correlators across the black hole apparent horizon" width="800" height="auto">
         <figcaption>Quantum correlators for a subcritical (no AH) and supercritical (AH exists) simulations</figcaption>
     
         <h2>Future Work</h2>
         <p>There are various different avenues one can take to further develop this project and improve SpheriCo.jl. For instance, a possible direction is to work on the mathematical formulation of the equations solved, such that the constraint violation is improved and a dynamical shift is included in the metric ansatz. The latter can allow us to have stable near-critical simulations for the semiclassical setup, and more economic simulations for the classical one, since we could then increase the resolution near the origin without numerical regridding. Another idea is to add the possibility of finite difference summation-by-parts operators of higher order, which could then improve the accuracy of the simulations, making it especially important for the approximation of the quantum fields and their backreaction on the classical geometry. Experimenting with different lapse conditions can also be benificial in understanding the shape of the quantum correlators across the apparent horizon in different foliations.</p>
     </section>
 
-    <footer>
-        <div class="social-links">
-            <a href="https://github.com/ThanasisGiannakopoulos" target="_blank"><img src="../../images/github-mark.png" alt="GitHub" class="github-logo"></a>
-            <a href="https://linkedin.com/in/thanasis-giannakopoulos" target="_blank"><img src="../../images/linkedin.png" alt="LinkedIn" class="linkedin-logo"></a>
-            <a href="https://scholar.google.com/citations?user=Kjg529MAAAAJ&hl=en" target="_blank"><img src="../../images/google-scholar-mark.png" alt="Google Scholar" class="google-scholar-logo"></a>
-            <a href="mailto:giannakopoulos.th@gmail.com"><img src="../../images/email_icon.png" alt="Email" class="email-icon"></a>
-        </div>
-        <p>Created by Thanasis Giannakopoulos</p>
-    </footer>
+    <!-- Placeholder for the footer -->
+    <div id="footer-placeholder"></div>
 
     <button id="themeToggleBtn" class="theme-toggle-btn">Light</button>
 
-    <script src="../../script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

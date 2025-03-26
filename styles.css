@@ -79,35 +79,35 @@ h1 {
 }
 
 .github-logo {
-    content: url('images/github-mark.png');
+    content: url('assets/footer/github-mark.png');
 }
 
 .dark-theme .github-logo {
-    content: url('images/github-mark-white.png');
+    content: url('assets/footer/github-mark-white.png');
 }
 
 .linkedin-logo {
-    content: url('images/linkedin-logo.png');
+    content: url('assets/footer/linkedin-logo.png');
 }
 
 .dark-theme .linkedin-logo {
-    content: url('images/linkedin-logo-white.png');
+    content: url('assets/footer/linkedin-logo-white.png');
 }
 
 .google-scholar-logo {
-    content: url('images/google-scholar-mark.png');
+    content: url('assets/footer/google-scholar-mark.png');
 }
 
 .dark-theme .google-scholar-logo {
-    content: url('images/google-scholar-mark-white.png');
+    content: url('assets/footer/google-scholar-mark-white.png');
 }
 
 .email-icon {
-    content: url('images/email_icon_black.png');
+    content: url('assets/footer/email_icon_black.png');
 }
 
 .dark-theme .email-icon {
-    content: url('images/email_icon_white.png');
+    content: url('assets/footer/email_icon_white.png');
 }
 
 #content, #projects {
