@@ -87,11 +87,11 @@ h1 {
 }
 
 .linkedin-logo {
-    content: url('assets/footer/linkedin-logo.png');
+    content: url('assets/footer/linkedin_black.png');
 }
 
 .dark-theme .linkedin-logo {
-    content: url('assets/footer/linkedin-logo-white.png');
+    content: url('assets/footer/linkedin_white.png');
 }
 
 .google-scholar-logo {
