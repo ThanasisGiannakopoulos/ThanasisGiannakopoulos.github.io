@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TG Projects: PINNs</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7S9BVPW9MT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7S9BVPW9MT');
+    </script>
+</head>
+<body class="light-theme"> <!-- Default theme -->
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="../../index.html">About me</a></li>
+                <li>
+                    <a href="projects.html" class="active">Projects</a>
+                    <span class="highlight">PINNs</span>
+                </li>
+                <li><a href="talks.html">Talks</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="content">
+        <h1>PINNs</h1>
+        <p><strong>Summary:</strong> Leveraging Physics Informed Neural Networks (PINNs) to solve a system of coupled equations and generate initial data for boson stars.</p>
+
+        <p><strong>Keywords:</strong> Machine Learning, Neural Networks, PyTorch</p>
+
+        <p><strong>Repository:</strong> <a href="https://github.com/ThanasisGiannakopoulos/PINNS_Boson_stars" target="_blank">PINNS_Boson_stars</a>
+        </p>
+
+        <p><strong>Date:</strong> 3 April 2025 (work in progress)</p>
+
+        <p>
+            <a href="https://link.springer.com/article/10.12942/lrr-2012-6" target="_blank">Boson stars</a> are hypothetical objects that are formed by a localised scalar configuration. To construct a boson star solution we need to solve a set of coupled partial differential equations (elliptic). In this project we simplify the problem by restricting our attention to spherical symmetry, and we need to solve a set of coupled ordinary differential equations (ODE). These equations are formally singular near r=0 and with standard numerical integration schemes as the shooting method, we need to take care of this region (regularize). We use Physics Informed Neural Networks (PINNs) to solve these equations. The loss function is constructed by the equations we want to solve, and interestingly, without the need to regularize them. Essentially, we need to solve an integral with the loss function over our computational domain, and we do so by using the Monte Carlo method (random sampling of points within the domain). The control of the loss function is harder near r=0 and to mitigate this we use a coordinate transformation that allows us to draw more points in that region.
+        </p>
+        
+        <p>
+            We experiment with different architectures of NNs, loss functions, and sampling methods. More updates are coming soon.
+        </p>
+    </section>
+
+    <!-- Placeholder for the footer -->
+    <div id="footer-placeholder"></div>
+
+    <button id="themeToggleBtn" class="theme-toggle-btn">Light</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

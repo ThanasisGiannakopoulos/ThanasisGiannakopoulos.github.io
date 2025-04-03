@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TG Projects: Time series</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7S9BVPW9MT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7S9BVPW9MT');
+    </script>
+</head>
+<body class="light-theme"> <!-- Default theme -->
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="../../index.html">About me</a></li>
+                <li>
+                    <a href="projects.html" class="active">Projects</a>
+                    <span class="highlight">Time series</span>
+                </li>
+                <li><a href="talks.html">Talks</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="content">
+        <h1>Time series</h1>
+        <p><strong>Summary:</strong> Exploring different machine learning algorithms to predict stock prices in an interval 1-10 days, on historical data.</p>
+
+        <p><strong>Keywords:</strong> Machine Learning, Scikit-learn, TensorFlow</p>
+
+        <p><strong>Repository:</strong> <a href="https://github.com/ThanasisGiannakopoulos/timeseries_forecasting_ml" target="_blank">timeseries_forecasting_ml</a>
+        </p>
+
+        <p><strong>Date:</strong> 3 April 2025 (work in progress)</p>
+
+        <img src="assets/projects/timeseries/stock_price_predictions.png" alt="Stock price predictions with different machine learning algorithms" width="900" height="auto">
+        <figcaption>Stock price predictions with different machine learning algorithms</figcaption>
+
+        <p>
+            As a first working example I take the Apple stock price from 01-01-2020 to 01-01-2024. The models are trained on these data minus the last 10 days, and then predict the value for these days. I use the closing price and train the models with lag features, the past 5 closing prices with respect to the target value. The models are:
+        </p>
+
+        <ul>
+            <li>Linear Regression (LR): fits only the 5 lag features</li>
+            <li>Neural Network (NN): forward feeding network with an input layer of 5 fully connected neurons to read the lag features and hidden one with 20 neurons</li>
+            <li>Gated Recurrent Unit (GRU): 2 layers of 20 units</li>
+            <li>Long Short-Term Memory (LSTM): 2 layers of 20 cells </li>
+        </ul>
+
+        <p>
+            For the three different neural networks, in this experiment, I used an Adam optimizer with learning rate 0.001, mean squared error (MSE) as the loss function, 50 epochs for training, and batches of size 64 (that is training data points process simultaneously). Based on the MSE of the predictions the ranking is the following (best to worst): LR, GRU, NN, LSTM.
+        </p>
+
+        <p>
+            Updates on more experiments and results are on the way.
+        </p>
+                
+
+        
+    </section>
+
+    <!-- Placeholder for the footer -->
+    <div id="footer-placeholder"></div>
+
+    <button id="themeToggleBtn" class="theme-toggle-btn">Light</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -296,3 +296,48 @@ a:active {
     margin-top: 0.2em; /* Add some spacing above the word */
     font-weight: bold; /* Make the text bold */
 }
+
+/* Add space between tags and published date */
+.tags {
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+.published-date {
+    margin-top: 10px; /* Adjust as needed */
+    font-size: 0.9em;
+}
+
+/* Repository links container */
+.repository-links {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: inherit; /* Ensure "Repository:" uses the default text color */
+}
+
+/* Explicitly style the "Repository:" text */
+.repository-links > strong {
+    color: inherit; /* Use the default text color */
+    font-weight: bold; /* Keep it bold */
+    text-decoration: none; /* Ensure no underline */
+    pointer-events: none; /* Prevent interaction */
+    margin-right: 5px; /* Add spacing between "Repository:" and the first link */
+}
+
+/* Style the links inside .repository-links */
+.repository-link {
+    margin-top: 5px; /* Add spacing between links */
+    display: inline-block; /* Ensure links are inline */
+}
+
+.repository-link a {
+    color: var(--link-color, #0366d6); /* Use theme-specific link color */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Ensure links are treated as separate elements */
+}
+
+/* Hover effect for links */
+.repository-link a:hover {
+    color: var(--link-hover-color, #005cc5); /* Use theme-specific hover color */
+    text-decoration: underline; /* Optional: Add underline on hover */
+}

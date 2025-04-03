@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - TG</title>
+    <title>TG Projects</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7S9BVPW9MT"></script>
@@ -27,44 +27,130 @@
     </header>
 
     <section id="projects">
+
         <div class="project-list">
-            <!-- Project 1 -->
+        
+            <!-- project -->
             <div class="project-item">
-                <a href="projects_hyperbolicity.html">
-                    <h3>The hyperbolicity of characteristic formulations</h3>
-                    <p>Investigating the hyperbolicity of the characteristic setup in general relativity and its impact in applications.</p>
+                <a href="projects_pinns.html">
+                    <h3>PINNs</h3>
+                    <p>Leveraging Physics Informed Neural Networks (PINNs) to solve a system of coupled equations and generate initial data for boson stars.</p>
                     <ul>
-                        <li>Found that common characteristic formulations are only weakly hyperbolic.</li>
-                        <li>Analysed the effect of weak hyperbolicity in numerical simulations through suitable convergence test.</li>
-                        <li>Discussed the implications in applications such as gravitational waveform modelling, and specifically the well-posedness of the CCE and CCM methods.</li>
+                        <li>Exploring different neural network architectures and training them on CPU and GPU (using CUDA).</li>
+                        <li>Experimenting with different loss functions and sampling methods for Monte Carlo integration.</li>
+                        <li>Comparing results agaist traditional shooting methods for numerical integration.</li>
                     </ul>
                     <div class="tags">
-                        <strong>Tags:</strong>
-                        <span class="tag">general relativity,</span>
-                        <span class="tag">PDE analysis,</span>
-                        <span class="tag">numerical convergence</span>
+                        <strong>Keywords:</strong>
+                        <span class="tag">Machine Learning,</span>
+                        <span class="tag">Neural Networks,</span>
+                        <span class="tag">PyTorch</span>
+                    </div>
+                    <div class="repository-links">
+                        <strong>Repository:</strong>
+                        <div class="repository-link">
+                            <a href="https://github.com/ThanasisGiannakopoulos/PINNS_Boson_stars" target="_blank">PINNS_Boson_stars</a>
+                        </div>
+                    </div>
+                    <div class="published-date">
+                        <strong>Date:</strong> 3 April 2025 (work in progress)
                     </div>
                 </a>
             </div>
-    
-            <!-- Project 2 -->
+            
+            <!-- project -->
+            <div class="project-item">
+                <a href="projects_timeseries.html">
+                    <h3>Time series</h3>
+                    <p>Exploring different machine learning algorithms to predict stock prices in an interval 1-10 days, on historical data.</p>
+                    <ul>
+                        <li>Linear Regression models with different features using scikit-learn.</li>
+                        <li>Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) models using TensorFlow.</li>
+                        <li>Experimenting with different lag features and comparing results.</li>
+                    </ul>
+                    <div class="tags">
+                        <strong>Keywords:</strong>
+                        <span class="tag">Machine Learning,</span>
+                        <span class="tag">Scikit-learn,</span>
+                        <span class="tag">TensorFlow</span>
+                    </div>
+                    <div class="repository-links">
+                        <strong>Repository:</strong>
+                        <div class="repository-link">
+                            <a href="https://github.com/ThanasisGiannakopoulos/timeseries_forecasting_ml" target="_blank">timeseries_forecasting_ml</a>
+                        </div>
+                    </div>
+                    <div class="published-date">
+                        <strong>Date:</strong> 3 April 2025 (work in progress)
+                    </div>
+                </a>
+            </div>
+            
+            <!-- project -->
             <div class="project-item">
                 <a href="projects_spherico.html">
                     <h3>SpheriCo.jl</h3>
                     <p>A Julia package for the Spherical Collapse of a scalar field in classical and semiclassical gravity.</p>
                     <ul>
-                        <li>Combined the method of lines and summation-by-parts finite difference operators to solve stiff equations.</li>
+                        <li>Combined the method of lines and summation-by-parts finite difference operators to solve stiff equations and resolve instabilities.</li>
                         <li>Reduced runtime and resource requirements, enabling longer and more extensive simulations compared to what was possible before.</li>
                         <li>Achieved clear second-order convergence in numerical solutions, improving reliability and accuracy.</li>
                     </ul>
                     <div class="tags">
-                        <strong>Tags:</strong>
-                        <span class="tag">black holes,</span>
-                        <span class="tag">Hawking pairs,</span>
-                        <span class="tag">Julia</span>
+                        <strong>Keywords:</strong>
+                        <span class="tag">Julia,</span>
+                        <span class="tag">Numerical Simulations,</span>
+                        <span class="tag">Black Holes</span>
+                    </div>
+                    <div class="repository-links">
+                        <strong>Repository:</strong>
+                        <div class="repository-link">
+                            <a href="https://github.com/ThanasisGiannakopoulos/SpheriCo.jl" target="_blank">SpheriCo.jl</a>
+                        </div>
+                    </div>
+                    <div class="published-date">
+                        <strong>Date:</strong> 24 March 2025
                     </div>
                 </a>
             </div>
+            
+            <!-- project -->
+            <div class="project-item">
+                <a href="projects_hyperbolicity.html">
+                    <h3>Hyperbolicity</h3>
+                    <p>Investigated the hyperbolicity of the characteristic setup in general relativity and its impact in applications.</p>
+                    <ul>
+                        <li>Found that common characteristic formulations are only weakly hyperbolic, contrary to expectations.</li>
+                        <li>Analysed the effect of weak hyperbolicity in numerical simulations through suitable convergence test.</li>
+                        <li>Discussed the implications in applications such as gravitational waveform modelling, and specifically the well-posedness of the CCE and CCM methods.</li>
+                    </ul>
+                    <div class="tags">
+                        <strong>Keywords:</strong>
+                        <span class="tag">Differential Equations,</span>
+                        <span class="tag">Numerical Convergence,</span>
+                        <span class="tag">General Relativity</span>
+                    </div>
+                    <div class="repository-links">
+                        <strong>Repository:</strong>
+                        <div class="repository-link">
+                            <a href="https://github.com/ThanasisGiannakopoulos/model_CCE_CCM_public" target="_blank">model_CCE_CCM</a>
+                        </div>,
+                        <div class="repository-link">
+                            <a href="https://github.com/ThanasisGiannakopoulos/PhD-thesis-supp" target="_blank">PhD_thesis</a>
+                        </div>,
+                        <div class="repository-link">
+                            <a href="https://github.com/ThanasisGiannakopoulos/BondiToy" target="_blank">Bondi_Toy</a>
+                        </div>
+                    </div>
+                    <div class="published-date">
+                        <strong>Date:</strong> 3 January 2024
+                    </div>
+                </a>
+            </div>
+        
+            
+        
+        <!-- end of project-list -->
         </div>
         
     </section>
